@@ -1,0 +1,101 @@
+id,name,category,brand,price,rating,purchaseCount,stock
+1,Headphones,Electronics,Sony,4500.50,4.5,120,20
+2,Keyboard,Electronics,Logitech,2500.00,4.2,80,15
+3,Mouse,Electronics,HP,1200.00,4.0,60,30
+4,Novel,Books,Oxford,800.00,4.7,40,50
+5,Laptop,Electronics,Dell,85000.00,4.8,150,10
+6,Smart Watch,Electronics,Samsung,12000.00,4.3,90,12
+7,Programming Book,Books,Pearson,1500.00,4.6,55,25
+8,Speaker,Electronics,Sony,5500.00,4.4,70,18
+9,DSA Book,Books,Oxford,1000.00,4.5,45,40
+10,Monitor,Electronics,Dell,22000.00,4.6,100,8
+11,Wireless Earbuds,Electronics,Samsung,6500.00,4.4,110,22
+12,Tablet,Electronics,Apple,95000.00,4.8,130,9
+13,Power Bank,Electronics,Anker,3500.00,4.3,75,35
+14,USB Cable,Electronics,Baseus,500.00,4.1,95,60
+15,Webcam,Electronics,Logitech,7500.00,4.5,65,14
+16,Microphone,Electronics,Boya,4500.00,4.4,50,16
+17,Printer,Electronics,HP,28000.00,4.2,85,7
+18,Router,Electronics,TP-Link,6500.00,4.3,90,20
+19,External Hard Drive,Electronics,Seagate,15000.00,4.6,105,11
+20,SSD,Electronics,Samsung,18000.00,4.7,140,13
+21,Science Book,Books,Oxford,950.00,4.3,35,45
+22,English Grammar,Books,Pearson,1200.00,4.5,60,38
+23,History Book,Books,Oxford,1100.00,4.2,30,42
+24,Mathematics Book,Books,McGraw Hill,1800.00,4.6,75,28
+25,Physics Book,Books,Pearson,1600.00,4.4,50,32
+26,Chemistry Book,Books,Oxford,1400.00,4.3,42,30
+27,Java Programming,Books,Pearson,2200.00,4.8,95,20
+28,Python Programming,Books,O'Reilly,2800.00,4.9,120,18
+29,Database Systems,Books,McGraw Hill,2500.00,4.7,85,24
+30,Web Development,Books,O'Reilly,3000.00,4.8,100,15
+31,Gaming Mouse,Electronics,Logitech,4500.00,4.6,130,19
+32,Gaming Keyboard,Electronics,Razer,9500.00,4.7,115,12
+33,Gaming Headset,Electronics,HyperX,8500.00,4.5,90,14
+34,Graphics Card,Electronics,NVIDIA,125000.00,4.9,160,5
+35,Motherboard,Electronics,ASUS,42000.00,4.6,70,8
+36,Processor,Electronics,Intel,55000.00,4.8,140,6
+37,RAM 8GB,Electronics,Corsair,7500.00,4.4,100,25
+38,RAM 16GB,Electronics,Kingston,12000.00,4.6,110,18
+39,CPU Cooler,Electronics,Cooler Master,6500.00,4.3,55,13
+40,Computer Case,Electronics,NZXT,14000.00,4.5,65,10
+41,Smartphone,Electronics,Samsung,65000.00,4.7,180,12
+42,iPhone,Electronics,Apple,220000.00,4.9,200,7
+43,Mobile Cover,Accessories,Spigen,1200.00,4.2,85,50
+44,Screen Protector,Accessories,Baseus,500.00,4.1,90,65
+45,Mobile Charger,Electronics,Anker,2500.00,4.5,125,30
+46,Bluetooth Speaker,Electronics,JBL,8500.00,4.6,145,16
+47,Soundbar,Electronics,Sony,18000.00,4.5,80,9
+48,LED Television,Electronics,TCL,75000.00,4.7,115,6
+49,Projector,Electronics,Epson,55000.00,4.4,60,5
+50,Digital Camera,Electronics,Canon,95000.00,4.8,105,7
+51,Photography Book,Books,Pearson,1800.00,4.4,38,25
+52,Novel Collection,Books,Oxford,2500.00,4.7,65,20
+53,Computer Science,Books,McGraw Hill,3200.00,4.8,90,16
+54,Artificial Intelligence,Books,O'Reilly,3500.00,4.9,115,14
+55,Machine Learning,Books,Pearson,3000.00,4.7,85,18
+56,Operating Systems,Books,Wiley,2400.00,4.6,70,22
+57,Networking Book,Books,Cisco,2800.00,4.5,60,19
+58,Software Engineering,Books,Pearson,2200.00,4.6,75,21
+59,Cloud Computing,Books,O'Reilly,3100.00,4.8,95,13
+60,Cyber Security,Books,Wiley,2700.00,4.7,80,17
+61,Office Chair,Furniture,IKEA,18000.00,4.5,75,10
+62,Study Table,Furniture,IKEA,22000.00,4.6,60,8
+63,Desk Lamp,Home,Philips,2500.00,4.3,55,25
+64,Ceiling Fan,Home,Orient,12000.00,4.4,85,12
+65,Air Conditioner,Home,Haier,125000.00,4.7,130,5
+66,Refrigerator,Home,Dawlance,95000.00,4.6,110,6
+67,Microwave Oven,Home,Panasonic,32000.00,4.5,90,8
+68,Electric Kettle,Home,Kenwood,6500.00,4.3,70,15
+69,Blender,Home,Philips,8500.00,4.4,65,12
+70,Vacuum Cleaner,Home,Dyson,55000.00,4.8,100,7
+71,Sports Shoes,Fashion,Nike,15000.00,4.6,140,20
+72,Running Shoes,Fashion,Adidas,12000.00,4.5,125,18
+73,T Shirt,Fashion,Levis,2500.00,4.2,90,40
+74,Jeans,Fashion,Denim,4500.00,4.3,85,25
+75,Jacket,Fashion,Puma,8500.00,4.5,75,15
+76,Backpack,Accessories,HP,3500.00,4.4,100,30
+77,Leather Wallet,Accessories,Gucci,6500.00,4.6,65,12
+78,Wrist Watch,Fashion,Casio,8500.00,4.7,110,14
+79,Sunglasses,Fashion,Ray-Ban,12000.00,4.8,95,10
+80,Travel Bag,Accessories,American Tourister,7500.00,4.5,80,16
+81,Water Bottle,Home,Tupperware,1200.00,4.2,60,45
+82,Coffee Maker,Home,DeLonghi,18000.00,4.7,85,9
+83,Toaster,Home,Philips,5500.00,4.3,55,13
+84,Rice Cooker,Home,Panasonic,9500.00,4.5,70,11
+85,Iron,Home,Philips,4500.00,4.4,90,18
+86,Hair Dryer,Personal Care,Remington,6500.00,4.5,100,14
+87,Electric Shaver,Personal Care,Philips,7500.00,4.6,80,12
+88,Hair Straightener,Personal Care,Remington,5500.00,4.3,65,10
+89,Face Wash,Personal Care,Nivea,850.00,4.2,120,35
+90,Shampoo,Personal Care,L'Oreal,1200.00,4.4,135,40
+91,Football,Sports,Adidas,4500.00,4.6,95,20
+92,Cricket Bat,Sports,Gray Nicolls,8500.00,4.7,75,12
+93,Cricket Ball,Sports,Kookaburra,1800.00,4.5,60,30
+94,Tennis Racket,Sports,Wilson,12000.00,4.6,55,8
+95,Yoga Mat,Sports,Reebok,2500.00,4.4,70,25
+96,Dumbbells,Sports,Decathlon,6500.00,4.5,85,14
+97,Bicycle,Sports,Giant,45000.00,4.8,100,6
+98,Treadmill,Sports,Fitkit,85000.00,4.7,65,4
+99,Smart Bulb,Electronics,Philips,2200.00,4.3,90,22
+100,Power Strip,Electronics,Belkin,1800.00,4.4,75,28
