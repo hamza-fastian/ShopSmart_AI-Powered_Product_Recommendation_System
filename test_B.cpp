@@ -75,7 +75,7 @@ int main() {
 
             cout << p.name << " purchased successfully!" << endl;
             cout << "Remaining Stock: " << p.stock << endl;
-            cout << "Remaining Budget: " << customer->budget - p.price << endl;
+            cout << "Remaining Budget: " << customer->budget << endl;
         }
         else if(found->stock <= 0) {
             cout << "Product is out of stock!" << endl;
