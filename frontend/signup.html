@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cdefs%3E%3ClinearGradient id=%27g%27 x1=%270%27 y1=%270%27 x2=%271%27 y2=%271%27%3E%3Cstop offset=%270%27 stop-color=%27%234f46e5%27/%3E%3Cstop offset=%271%27 stop-color=%27%237c3aed%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27url(%23g)%27/%3E%3Cpath d=%27M16 6l2.2 6.3L24.5 14.5l-6.3 2.2L16 23l-2.2-6.3L7.5 14.5l6.3-2.2z%27 fill=%27white%27/%3E%3C/svg%3E">
+  <title>Create account — ShopSmart</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="signup">
+  <div id="site-nav"></div>
+  <main class="auth-wrap">
+    <aside class="auth-aside">
+      <h2>Tell ShopSmart what you like.</h2>
+      <p>Your budget and favorite categories feed the recommendation score from your very first visit.</p>
+      <div class="auth-points" id="auth-points"></div>
+    </aside>
+    <section class="auth-main">
+      <div class="auth-card" id="signup-card">
+        <h1>Create your account</h1>
+        <p>You'll receive a Customer ID to log in with.</p>
+        <div id="form-alert"></div>
+        <form id="signup-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input class="input" id="name" autocomplete="name" placeholder="Your name" maxlength="60" required>
+            <div class="error-text" id="name-err"></div>
+          </div>
+          <div class="field">
+            <label for="budget">Budget (Rs)</label>
+            <input class="input" id="budget" inputmode="decimal" placeholder="e.g. 25000" required>
+            <span class="hint">The maximum price you like to pay. Items within budget score higher.</span>
+            <div class="error-text" id="budget-err"></div>
+          </div>
+          <div class="field">
+            <label>Favorite categories <span class="hint">(optional)</span></label>
+            <div class="chip-row" id="cat-chips"><span class="hint">Loading categories…</span></div>
+          </div>
+          <button class="btn btn-primary btn-block" id="submit" type="submit">Create account</button>
+        </form>
+        <div class="auth-foot">Already registered? <a href="login.html">Log in</a></div>
+      </div>
+    </section>
+  </main>
+  <script src="js/icons.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

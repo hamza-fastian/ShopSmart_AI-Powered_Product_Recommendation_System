@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cdefs%3E%3ClinearGradient id=%27g%27 x1=%270%27 y1=%270%27 x2=%271%27 y2=%271%27%3E%3Cstop offset=%270%27 stop-color=%27%234f46e5%27/%3E%3Cstop offset=%271%27 stop-color=%27%237c3aed%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27url(%23g)%27/%3E%3Cpath d=%27M16 6l2.2 6.3L24.5 14.5l-6.3 2.2L16 23l-2.2-6.3L7.5 14.5l6.3-2.2z%27 fill=%27white%27/%3E%3C/svg%3E">
+  <title>ShopSmart — Discover Products You'll Love</title>
+  <meta name="description" content="ShopSmart is an AI-powered personalized shopping experience driven by a C++ Data Structures recommendation engine.">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div id="site-nav"></div>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></i> AI-powered personalized shopping</span>
+        <h1>Discover products <span class="grad-text">you'll love</span></h1>
+        <p class="lead">ShopSmart scores every product against your preferred categories, brands, budget and purchase history, then a max-heap ranks the best matches, so your top picks come first.</p>
+        <div class="hero-cta" id="hero-cta">
+          <a class="btn btn-primary" href="signup.html">Get my recommendations</a>
+          <a class="btn btn-ghost" href="products.html">Browse products</a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div><strong>—</strong><span>Products</span></div>
+          <div><strong>—</strong><span>Categories</span></div>
+          <div><strong>—</strong><span>Brands</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-visual"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div><span class="eyebrow">Shop by category</span><h2>Everything in the catalog</h2><p>Live from the ShopSmart product data.</p></div>
+        <a class="btn btn-ghost btn-sm" href="products.html">View all</a>
+      </div>
+      <div class="grid cat-grid" id="categories"></div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div><span class="eyebrow">Top rated</span><h2>Featured products</h2><p>The highest-rated items in the catalog right now.</p></div>
+        <a class="btn btn-ghost btn-sm" href="products.html?sort=rating">See more</a>
+      </div>
+      <div class="grid product-grid" id="featured"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="ai-panel">
+        <div>
+          <span class="eyebrow">The recommendation engine</span>
+          <h2>Not just a catalog. A match score for every product.</h2>
+          <p>For each customer, ShopSmart's C++ engine awards points per product, pushes the scores into a max-heap and extracts the top K. Every recommendation in the app comes with the exact points behind it.</p>
+          <div class="ds-tags">
+            <span class="ds-tag live">Hash Table · lookups &amp; login</span>
+            <span class="ds-tag live">Max Heap · ranking</span>
+            <span class="ds-tag">BST · price index</span>
+            <span class="ds-tag">AVL Tree · name index</span>
+            <span class="ds-tag">Circular List · navigation</span>
+          </div>
+        </div>
+        <div class="score-list">
+          <div class="score-row"><span class="pts">+3</span><span>Product is in one of your preferred categories</span></div>
+          <div class="score-row"><span class="pts">+2</span><span>Product is from one of your preferred brands</span></div>
+          <div class="score-row"><span class="pts">+2</span><span>Price fits within your budget</span></div>
+          <div class="score-row"><span class="pts">+2</span><span>You've bought from this category before</span></div>
+          <div class="score-row"><span class="pts">+0–5</span><span>The product's customer rating</span></div>
+          <div class="score-row"><span class="pts">+1</span><span>The product is popular with other shoppers</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow">Why ShopSmart</span><h2>Shopping that adapts to you</h2></div></div>
+      <div class="grid feature-grid">
+        <div class="card feature"><div class="cat-ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></div><h3>Personalized ranking</h3><p>Your top picks are ranked by a transparent score, not a black box.</p></div>
+        <div class="card feature"><div class="cat-ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h15a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12"/><circle cx="16" cy="13.5" r="1.2"/></svg></div><h3>Budget aware</h3><p>Products within your budget score higher, and purchases update your remaining budget.</p></div>
+        <div class="card feature"><div class="cat-ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></svg></div><h3>Real Data Structures</h3><p>Built on hash tables, BST, AVL trees, a circular list and a max-heap in C++.</p></div>
+        <div class="card feature"><div class="cat-ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><h3>Learns from purchases</h3><p>Buying from a category boosts similar products in your next recommendations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/icons.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

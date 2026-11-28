@@ -1,0 +1,16 @@
+/* Product catalog */
+.filters { position: sticky; top: 68px; z-index: 20; background: rgba(246, 247, 251, .92); backdrop-filter: blur(10px); padding: 14px 0; border-bottom: 1px solid var(--line); margin-top: 18px; }
+.filter-row { display: grid; grid-template-columns: 1.6fr 1fr 1fr auto; gap: 12px; align-items: center; }
+.search-box { position: relative; }
+.search-box svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); width: 18px; height: 18px; }
+.search-box .input { padding-left: 42px; border-radius: 999px; }
+.cat-pills { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 4px; scrollbar-width: none; }
+.cat-pills::-webkit-scrollbar { display: none; }
+.cat-pills .chip { flex: none; }
+.result-bar { display: flex; justify-content: space-between; align-items: center; margin: 22px 0 18px; color: var(--muted); font-size: .92rem; }
+.result-bar strong { color: var(--ink); }
+@media (max-width: 820px) {
+  .filter-row { grid-template-columns: 1fr 1fr; }
+  .search-box { grid-column: 1 / -1; }
+  .filters { position: static; }
+}

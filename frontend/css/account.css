@@ -1,0 +1,22 @@
+/* Preferences, history and profile pages */
+.two-col { display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px; align-items: start; margin-top: 24px; }
+@media (max-width: 960px) { .two-col { grid-template-columns: 1fr; } }
+.brand-scroll { max-height: 220px; overflow: auto; padding: 4px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.save-bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.profile-head { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; padding: 28px; }
+.avatar-lg { width: 84px; height: 84px; border-radius: 26px; background: var(--grad); color: #fff; display: grid; place-items: center; font-size: 2.2rem; font-weight: 800; box-shadow: var(--shadow-lg); }
+.profile-head h1 { font-size: 1.8rem; }
+.kv { display: grid; gap: 0; }
+.kv div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+.kv div:last-child { border-bottom: 0; }
+.kv span { color: var(--muted); }
+.kv b { text-align: right; }
+.h-table { width: 100%; border-collapse: collapse; }
+.h-row { display: grid; grid-template-columns: 44px 76px 1fr auto; gap: 16px; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--line); cursor: pointer; transition: background .15s; }
+.h-row:last-child { border-bottom: 0; }
+.h-row:hover { background: #fafbff; }
+.h-row .thumb { width: 76px; height: 76px; border-radius: 14px; }
+.h-no { color: var(--muted); font-weight: 700; font-size: .85rem; }
+.h-row strong { display: block; }
+.h-row .meta { color: var(--muted); font-size: .85rem; }
+@media (max-width: 560px) { .h-row { grid-template-columns: 64px 1fr; } .h-no { display: none; } .h-row .price { grid-column: 2; } }

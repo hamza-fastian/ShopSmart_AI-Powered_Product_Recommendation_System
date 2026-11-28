@@ -1,0 +1,56 @@
+/* Dashboard + recommendations pages */
+.welcome { position: relative; overflow: hidden; padding: 34px 36px; border-radius: 26px; color: #fff; background: radial-gradient(500px 240px at 95% 0%, rgba(255, 255, 255, .2), transparent 60%), var(--grad); box-shadow: var(--shadow-lg); display: flex; gap: 24px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.welcome h1 { font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 800; }
+.welcome p { color: rgba(255, 255, 255, .85); margin-top: 8px; max-width: 520px; }
+.welcome .btn-ghost { background: rgba(255, 255, 255, .16); color: #fff; border-color: rgba(255, 255, 255, .35); }
+.welcome .btn-ghost:hover { background: rgba(255, 255, 255, .26); }
+.welcome .btn-light { background: #fff; color: var(--primary-dark); }
+.welcome-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.dash-search { display: flex; gap: 10px; margin: 22px 0 0; }
+.dash-search .input { border-radius: 999px; padding-left: 18px; }
+.stat-grid { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin: 26px 0 8px; }
+.stat { padding: 20px; display: flex; gap: 14px; align-items: center; }
+.stat .cat-ico { flex: none; }
+.stat small { color: var(--muted); font-size: .8rem; font-weight: 600; }
+.stat strong { display: block; font-size: 1.5rem; letter-spacing: -.03em; line-height: 1.2; }
+.dash-section { margin-top: 44px; }
+.dash-cols { display: grid; grid-template-columns: 1.6fr 1fr; gap: 22px; margin-top: 44px; align-items: start; }
+.panel { padding: 22px; }
+.panel h3 { font-size: 1.1rem; margin-bottom: 14px; }
+.purchase-item { display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.purchase-item:last-child { border-bottom: 0; }
+.purchase-item .thumb { width: 54px; height: 54px; border-radius: 12px; flex: none; }
+.purchase-item strong { display: block; font-size: .93rem; }
+.purchase-item span { color: var(--muted); font-size: .82rem; }
+.quick { display: grid; gap: 10px; }
+.quick a { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); font-weight: 600; font-size: .93rem; transition: all .2s; }
+.quick a:hover { border-color: #c5caf0; background: #fafbff; transform: translateX(3px); }
+.quick a svg { color: var(--primary); }
+.note { margin-top: 14px; }
+@media (max-width: 960px) { .dash-cols { grid-template-columns: 1fr; } }
+
+/* recommendation list (full page) */
+.rec-toolbar { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 24px 0; }
+.rec-list { display: grid; gap: 18px; }
+.rec-item { display: grid; grid-template-columns: 56px 190px 1fr auto; gap: 22px; align-items: center; padding: 18px; animation: rise .45s ease both; transition: box-shadow .2s, border-color .2s; }
+.rec-item:hover { box-shadow: var(--shadow); border-color: #d2d6f0; }
+.rank { width: 48px; height: 48px; border-radius: 16px; display: grid; place-items: center; font-weight: 800; font-size: 1.2rem; background: var(--grad-soft); color: var(--primary-dark); border: 1px solid #dfe3fb; }
+.rec-item:first-child .rank { background: var(--grad); color: #fff; border: 0; }
+.rec-item .thumb { aspect-ratio: 4/3; border-radius: 14px; cursor: pointer; }
+.rec-info h3 { font-size: 1.15rem; cursor: pointer; }
+.rec-info h3:hover { color: var(--primary-dark); }
+.rec-info .pcard-brand { margin: 2px 0 10px; }
+.reasons { display: flex; flex-wrap: wrap; gap: 6px; }
+.reason { padding: 4px 10px; border-radius: 999px; background: #f1f3fb; font-size: .76rem; font-weight: 600; color: var(--ink-2); }
+.reason b { color: var(--primary-dark); margin-right: 3px; }
+.rec-side { text-align: right; display: grid; gap: 10px; justify-items: end; min-width: 150px; }
+.score-big { font-size: 1.9rem; font-weight: 800; letter-spacing: -.03em; line-height: 1; }
+.score-big small { display: block; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-top: 4px; }
+.meter { width: 150px; height: 8px; border-radius: 99px; background: var(--soft); overflow: hidden; }
+.meter i { display: block; height: 100%; border-radius: 99px; background: var(--grad); transition: width .8s cubic-bezier(.2, .8, .2, 1); }
+@media (max-width: 900px) {
+  .rec-item { grid-template-columns: 44px 1fr; }
+  .rec-item .thumb { grid-column: 2; }
+  .rec-info, .rec-side { grid-column: 1 / -1; }
+  .rec-side { text-align: left; justify-items: start; }
+}
